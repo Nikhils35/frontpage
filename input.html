@@ -1,0 +1,74 @@
+<html>
+
+<Head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Front page generator</title>
+</Head>
+
+<body>
+    <nav id="nav">
+
+    </nav>
+    <div class="mainbox">
+        <div class="box">
+            <div class="disc">
+                <h2 id="h2">College Practical Front Page Generator</h2>
+
+            </div>
+            <form id="form">
+                <select class="box_sizing select" id="session" required>
+                    <option value="">Select Session</option>
+                    <option value="2024-25">2024-25</option>
+                    <option value="2024-25">2025-26</option>
+                    <option value="2024-25">2026-27</option>
+                </select>
+                <select class="box_sizing select" id="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="Computer science and engineering">Computer science and engineering</option>
+                    <option value="Information technology">Information technology</option>
+                </select>
+                <select class="box_sizing select" id="Year-sem" required>
+                    <option value="">Year & Semester</option>
+                    <option value="2nd year - 3rd semester">2nd year - 3rd semester</option>
+                    <option value="2nd year - 4th semester">2nd year - 4th semester</option>
+                    <option value="3rd year - 5th semester">3rd year - 5th semester</option>
+                    <option value="3rd year - 6th semester">3rd year - 6th semester</option>
+                </select>
+                <input class="box_sizing" id="sub" type="text" placeholder="Subject" required />
+                <input class="box_sizing" id="teacher" type="text" placeholder="Teacher Name" required />
+                <input class="box_sizing" id="student" type="text" placeholder="Student Name" required />
+                <input class="box_sizing" id="enroll" type="text" placeholder="Enrollment number" required />
+                <input class="box_sizing" id="submit" type="submit" required>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <div class="page">
+        <div class="paging" id="paging">
+            <div class="cllg">
+                <h2>Feroze Gandhi polytechnic </br> Raebareli</h2>
+            </div>
+            <div class="logo"><img src="img/logoo.png" alt="logo"></div>
+            <p class="Session">Session : <span id="Session">202 -2 </span></p>
+            <p class="Branch">Branch : <span id="Branch">branch</span></p>
+            <p class="large Year"><span id="Year">year & Semester</span></p>
+            <p class="Subject"><span id="Subject">SubjectName</span></p>
+           <div class="dd">
+             <div class="ddd">
+                <p class="large Student">Submited by : </br><span id="Student">Student name</span></p>
+            <p class="large Enroll">Enroll : <span id="Enroll">enroll</span></p>
+             </div>
+            <p class="large Teacher">Submited to : </br><span id="Teacher">Teacher</span></p>
+           </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
